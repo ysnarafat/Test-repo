@@ -7,8 +7,8 @@ namespace Problem
     {
         static void Main(string[] args)
         {
-            List<string> num = new List<string>;
-            List<KeyValuePair> dic = new List<KeyValuePair>;
+            List<string> num = new List<string>();
+            List<KeyValuePair<string,string>> dic = new List<KeyValuePair<string, string>>();
             int t = Convert.ToInt32(Console.ReadLine());
             for(int k = 0; k < t; k++)
             {
