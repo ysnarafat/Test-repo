@@ -13,22 +13,22 @@ namespace DevskillProblems
                 string s = Console.ReadLine();
                 string[] ara = s.Split(' ');
                 double[] num = new double[20];
-                for (int i=0;i<5;i++)
+                for (int i=0;i<2;i++)
                 {
                     num[i] = Convert.ToDouble(ara[i]);
-
-                    //Console.WriteLine(ara[i] + " " + num[i]);
-                    //i++;
                 }
 
-                double len = Math.Sqrt((num[0] - num[3])* (num[0] - num[3]) + (num[1] - num[4])* (num[1] - num[4]));
-                Console.Write("Case " + (j + 1) + ": ");
-                if (len < num[2])
+                double len = Math.Sqrt(2)*num[1];
+                len /= 2;
+                //Console.Write("Case " + (j + 1) + ": ");
+
+                //Console.WriteLine(Math.Abs(num[0]));
+                //Console.WriteLine(Math.Abs(len));
+                if (Math.Abs(len - num[0]) < .01)
                 {
-                    Console.WriteLine("Inside");
+                    Console.WriteLine("Yes");
                 }
-                else if (len > num[2]) Console.WriteLine("Outside");
-                else Console.WriteLine("OnCircle");
+                else Console.WriteLine("No");
             }
 
         }
