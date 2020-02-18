@@ -13,7 +13,6 @@ namespace DevskillProblems
                 string s = Console.ReadLine();
                 string[] ara = s.Split(' ');
                 double[] num = new double[20];
-                
                 for (int i=0;i<5;i++)
                 {
                     num[i] = Convert.ToDouble(ara[i]);
